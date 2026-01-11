@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seasons within webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+  </head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">
+          <img src="icon.png" alt="icon">
+          <!-- <div>Seasons Within</div> -->
+        </div>
+
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="btn" href="#contact">Book a Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-inner">
+            <h1>Finding Balance Through Life’s Seasons</h1>
+            <p>Trauma-Informed Therapy for Growth &amp; Healing</p>
+            <a class="btn" href="#contact">Schedule a Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="splits">
+        <div class="split left">
+        <div class="centered">
+            <!-- <img src="img_avatar2.png" alt="Avatar woman"> -->
+            <h2>header</h2>
+            <p>Some text.</p>
+        </div>
+        </div>
+
+        <div class="split right">
+        <div class="centered">
+            <!-- <img src="img_avatar.png" alt="Avatar man"> -->
+            <h2>header</h2>
+            <p>Some text here too.</p>
+        </div>
+        </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="section soft">
+      <div class="container">
+        <div class="center-head">
+          <div class="lined-title">About</div>
+          <h2>Guiding You Through Times of Change</h2>
+          <p>I provide a safe, compassionate space to explore, heal, and find your way forward.</p>
+        </div>
+
+        <div class="about-media" role="img" aria-label="Calming still life image"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="center-head">
+          <div class="lined-title">Our Services</div>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">🍃</div>
+            <h3>Individual Therapy</h3>
+            <p>Personalized support to navigate life’s challenges.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">◌◌</div>
+            <h3>Couples Counseling</h3>
+            <p>Helping partners reconnect and strengthen relationships.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🌳</div>
+            <h3>Clinical Supervision</h3>
+            <p>Supporting therapists through guidance and growth.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="cta">
+      <div class="container">
+        <h2>Ready to Take the Next Step?</h2>
+        <p>Connect with me for a free consultation.</p>
+        <a class="btn" href="mailto:hello@seasonswithin.ca">Get in Touch</a>
+      </div>
+    </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="brand-mark" style="border-color: rgba(246,244,241,.22); background: rgba(255,255,255,.06); color: rgba(246,244,241,.92);">🍃</div>
+          <div>Seasons Within</div>
+        </div>
+
+      <div class="copyright">© <span id="year"></span> Seasons Within. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

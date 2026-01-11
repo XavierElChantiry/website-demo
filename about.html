@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seasons within webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.html">
+  </head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">
+          <div class="brand-mark">🍃</div>
+          <div>Seasons Within</div>
+        </div>
+
+        <nav aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a class="btn" href="#contact">Book a Consultation</a>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="brand-mark" style="border-color: rgba(246,244,241,.22); background: rgba(255,255,255,.06); color: rgba(246,244,241,.92);">🍃</div>
+          <div>Seasons Within</div>
+        </div>
+
+      <div class="copyright">© <span id="year"></span> Seasons Within. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
