@@ -1,6 +1,6 @@
 :root{
     /* ===== Palette ===== */
-    --bg: #ece1d0;                 /* warm off-white */
+    --bg: #fffbf4;                 /* warm off-white */
     --bg-2: #e6a73a;               /* subtle band */
     --surface: rgba(255,255,255,.68);
     --card: rgba(255,255,255,.78);
@@ -136,11 +136,11 @@ footer{
     font-size: .85rem;
     color: rgba(246,244,241,.70);
 }
-
-/* ===== Responsive ===== */
-@media (max-width: 900px){
-    nav{ display:none; }
     /* altnav{ display:none; } */
+/* ===== Responsive ===== */
+/* @media (max-width: 900px){
+    nav{ display:none; }
+
     .hero-card{ min-height: 320px; }
     .card{ grid-column: span 12; }
-}
+} */
