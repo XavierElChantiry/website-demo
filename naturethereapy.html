@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seasons within webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="naturetherapy.css">
+  </head>
+
+<body>
+  <div id="header-placeholder"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="footer-placeholder"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header-placeholder').innerHTML = html;
+    });
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+</script>
+</body>
+</html>

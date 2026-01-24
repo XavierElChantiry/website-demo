@@ -1,0 +1,32 @@
+.intro-media{
+    width: min(100%);
+    margin: 22px auto 0;
+    border-radius: 0px;
+    border: 1px solid var(--line);
+    overflow:hidden;
+    box-shadow: var(--shadow-soft);
+    height: 210px;
+    color:rgb(0, 0, 0);
+    background:
+    linear-gradient(to bottom, rgba(246,244,241,.12), rgba(246,244,241,.55)),
+    url("tomoe-steineck.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.center-list {
+  list-style-position: inside; /* Positions bullets within the list item's content flow */
+  text-align: center;         /* Centers the text and the inside bullets */
+  padding-left: 0;            /* Removes default browser padding for consistent centering */
+}
+
+/* .therapy{
+    background-color: rgb(220, 243, 234);
+} */
+
+.section.therapy{
+    background:
+    linear-gradient(to bottom, rgba(0,0,0,.03), rgba(0,0,0,0) 35%),
+    radial-gradient(900px 260px at 50% 20%, rgba(47,74,69,.06), transparent 60%);
+    border-top: 1px solid rgba(0,0,0,0);
+} 

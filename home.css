@@ -1,5 +1,6 @@
 /* ===== Hero ===== */
 .hero{
+    display:none;
     padding: 38px 0 0;
 }
 .hero-card{
@@ -8,9 +9,7 @@
     border-radius: var(--radius);
     border: 1px solid var(--line);
     box-shadow: var(--shadow);
-    background:
-    linear-gradient(to bottom, rgba(246,244,241,.95) 0%, rgba(246,244,241,.65) 40%, rgba(246,244,241,.40) 65%, rgba(246,244,241,.18) 100%),
-    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2200&q=70");
+    background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2200&q=70");
     background-size: cover;
     background-position: center;
     min-height: 360px;
@@ -38,39 +37,21 @@
 }
 
 /* ===== Section headings with lines ===== */
-.section{
-    padding: 64px 0;
+/* .section{
+    padding: auto 0;
 }
 .section.soft{
     background:
     linear-gradient(to bottom, rgba(0,0,0,.03), rgba(0,0,0,0) 35%),
     radial-gradient(900px 260px at 50% 20%, rgba(47,74,69,.06), transparent 60%);
     border-top: 1px solid rgba(0,0,0,0);
-}
+} */
 
 .center-head{
     text-align:center;
     margin-bottom: 22px;
 }
 
-.lined-title{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap: 14px;
-    color: var(--muted);
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-.lined-title::before,
-.lined-title::after{
-    content:"";
-    height:1px;
-    width: min(160px, 22vw);
-    background: var(--line);
-    display:block;
-}
 
 .center-head h2{
     margin: 0 0 8px;
@@ -85,41 +66,61 @@
     color: var(--muted);
 }
 
-.splits{
-    padding-top: 54px;
-    height: 210px;
-}
-/* Split the screen in half */
-.split {
-  height: 210px;
-  width: 50%;
-  position: absolute;
-  /* z-index: 1; */
-  /* top: 0; */
-  overflow-x: hidden;
-  padding-top: 20px;
+
+
+.content-section {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 60vh;
 }
 
-/* Control the left side */
-.left {
-  left: 0;
-  background-color: #111;
+/* Image side */
+.image-container {
+  flex: 1;
+  overflow: hidden;
 }
 
-/* Control the right side */
-.right {
-  right: 0;
-  background-color: red;
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+/* Text side */
+.text-container {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+  }
+
+  .image-container,
+  .text-container {
+    width: 100%;
+  }
+
+  .text-container {
+    padding: 2rem;
+  }
+}
+
+.center-list {
+  list-style-position: inside; /* Positions bullets within the list item's content flow */
+  text-align: center;         /* Centers the text and the inside bullets */
+  padding-left: 0;            /* Removes default browser padding for consistent centering */
+}
+
 
 /* If you want the content centered horizontally and vertically */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+
 
 /* Style the image inside the centered container, if needed */
 /* .centered img {
@@ -127,11 +128,11 @@
   border-radius: 50%;
 } */
 
-/* ===== About image ===== */
-.about-media{
+/* ===== intro image ===== */
+.intro-media{
     width: min(680px, 100%);
     margin: 22px auto 0;
-    border-radius: 18px;
+    border-radius: 0px;
     border: 1px solid var(--line);
     overflow:hidden;
     box-shadow: var(--shadow-soft);
@@ -157,7 +158,7 @@
     grid-column: span 4;
     background: var(--card);
     border: 1px solid var(--line);
-    border-radius: 18px;
+    /* border-radius: 18px; */
     padding: 22px 18px;
     text-align:center;
     box-shadow: var(--shadow-soft);

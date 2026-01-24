@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -6,48 +7,111 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Seasons within webpage</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="services.css">
   </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="topbar">
-        <div class="brand">
-          <div class="brand-mark">🍃</div>
-          <div>Seasons Within</div>
+  <div id="header-placeholder"></div>
+
+
+
+
+  <section id="intro" class="section soft">
+    <!-- <div class="container"> -->
+      <div class="center-head">
+
+      <div class="intro-media" role="img" aria-label="Calming still life image">
+        <!-- <div class="lined-title">About</div> -->
+          <h2>Support that honours your pace, your story, and your uniqueness.</h2>
+
         </div>
+                  <p>
+            I believe deeply in the intrinsic uniqueness of every youth, adult, family, and partnership.
+My work is grounded in curiosity, compassion, humour, and the understanding that healing looks different for each of us.
+You’re welcome to choose the setting that feels most supportive: outdoors, indoors, or virtual.
 
-        <nav aria-label="Primary">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="resources.html">Resources</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+          </p>
+      </div>
+    <!-- </div> -->
+  </section>
 
-        <a class="btn" href="#contact">Book a Consultation</a>
+
+
+  <section id="Therapy Services">
+    <div class="therapy">
+    <!-- <div class="container therapy"> -->
+      <div class="therapy" >
+        <div class="lined-title">Therapy Services</div>
+      </div>
+      <div class="center-head">
+<h3>Individual Therapy</h3>
+<p>
+Support for adults, youth, and children navigating trauma, anxiety, overwhelm, stress, grief, identity questions, dissociation, relationship changes, burnout, and life transitions.
+</p>
+
+<h3>Child &amp; Youth Therapy</h3>
+<p>
+A developmentally attuned approach blending play, movement, sensory regulation, and nature-based exploration to support emotional expression and resilience.
+</p>
+
+<h3>Family Therapy</h3>
+<p>
+A supportive space for communication, regulation, and connection, with room for movement, creativity, and strengthening relational bonds.
+</p>
+
+<h3>Support for First Responders, Military Members, Veterans, &amp; Those Impacted by War</h3>
+<p>
+A gentle, steady, and non-judgmental space to process the weight of service, displacement, and high-intensity or frontline experiences.
+</p>
+
+
+
       </div>
     </div>
-  </header>
+  </section>
 
-
-
-
-  <footer>
+  <section id="Clinical Consultation">
     <div class="container">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <div class="brand-mark" style="border-color: rgba(246,244,241,.22); background: rgba(255,255,255,.06); color: rgba(246,244,241,.92);">🍃</div>
-          <div>Seasons Within</div>
-        </div>
+      <div class="center-head">
+        <div class="lined-title">Clinical Consultation</div>
+      </div>
+      <div class="center-head">
+<p>
+(Outdoor or Virtual) <br>
+For counsellors, interns, and helping professionals wanting reflective, trauma-informed, grounded support.
+</p>
+<p>
+Formats include:
+</p>
+<ul class="center-list">
+  <li>Individual</li>
+  <li>Dyadic</li>
+  <li>Group</li>
+  <li>Ongoing or case-specific consultation</li>
+</ul>
 
-      <div class="copyright">© <span id="year"></span> Seasons Within. All Rights Reserved.</div>
+<p>
+Rates are currently reduced while completing BCACC &amp; CCPA supervision credentials.
+</p>
+
+
+
+      </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<div id="footer-placeholder"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header-placeholder').innerHTML = html;
+    });
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+</script>
 </body>
 </html>
