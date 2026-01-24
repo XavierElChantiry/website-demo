@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seasons within webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="training+compentency.css">
+  </head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+
+<section class="container">
+    <h1>🌿 Trainings &amp; Areas of Competency</h1>
+
+    <p class="intro">
+      Grounded, trauma-informed, and rooted in ongoing learning.
+    </p>
+
+    <p>
+      My work is shaped by a wide range of trauma-focused, somatic, relational,
+      nature-based, and culturally safe modalities. I approach training as a
+      living practice — one that continues to evolve through experience,
+      supervision, reflection, and relationship.
+    </p>
+    <hr>
+</section>
+
+
+<section class="container">
+    <h2>🍃 Trauma &amp; Somatic Approaches</h2>
+
+    <ul>
+      <li>Observed Experiential Integration (O.E.I.) — Level 2</li>
+      <li>Somatic &amp; Trauma Training</li>
+      <li>Trauma-Sensitive Mindfulness</li>
+      <li>Trauma-Informed CBT</li>
+      <li>Trauma-Informed Yoga</li>
+      <li>Trauma of Money</li>
+      <li>First Responder Health Training</li>
+      <li>Wilderness First Aid</li>
+    </ul>
+</section>
+
+
+<section class="container">
+    <h2>🌱 Family, Youth &amp; Play-Based Modalities</h2>
+
+    <ul>
+      <li>Emotion-Focused Family Therapy — Advanced</li>
+      <li>Synergetic Play Therapy</li>
+      <li>Play Therapy (CTRI)</li>
+      <li>Sand Tray Training (Satir, Shame, Trauma, Neuroscience)</li>
+      <li>Gottman Method — Level 1</li>
+      <li>Gottman Singles Workshop</li>
+    </ul>
+
+    
+
+    <h2>🌾 Solution-Focused, Mindfulness &amp; Brief Interventions</h2>
+
+    <ul>
+      <li>Brief Solution-Focused Therapy</li>
+      <li>Dialectical Behaviour Therapy (5-day intensive)</li>
+      <li>Existential Analysis — 1st Year</li>
+      <li>Mediation — Level 1</li>
+    </ul>
+
+    
+
+    <h2>🌲 Nature-Based Training</h2>
+
+    <ul>
+      <li>Advanced Nature-Based Therapy</li>
+      <li>Wilderness First Aid</li>
+    </ul>
+
+    
+
+    <h2>🌺 Culturally Safe, Inclusive &amp; Ethical Practice</h2>
+
+    <ul>
+      <li>Indigenous Cultural Safety Training</li>
+      <li>Culturally Safe Practice Training</li>
+      <li>Clinical Supervision Fundamentals</li>
+      <li>Anti-oppressive, trauma-informed foundations</li>
+      <li>
+        Experience supporting LGBTQ+ individuals, newcomers, youth, families,
+        and communities
+      </li>
+    </ul>
+
+    
+</section>
+<section class="container">
+    <hr>
+    <h2>🌙 Credentials &amp; Memberships</h2>
+
+    <div class="credentials">
+      <ul>
+        <li>Registered Clinical Counsellor (RCC)</li>
+        <li>Canadian Certified Counsellor (CCC)</li>
+        <li>FNHA Provider</li>
+        <li>CVAP Provider</li>
+        <li>Experienced Clinical Consultant &amp; Intern Supervisor</li>
+      </ul>
+    </div>
+</section>
+
+
+
+
+
+  <div id="footer-placeholder"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header-placeholder').innerHTML = html;
+    });
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+</script>
+</body>
+</html>

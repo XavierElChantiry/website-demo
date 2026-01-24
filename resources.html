@@ -6,48 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Seasons within webpage</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="resources.css">
   </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="topbar">
-        <div class="brand">
-          <div class="brand-mark">🍃</div>
-          <div>Seasons Within</div>
-        </div>
-
-        <nav aria-label="Primary">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="resources.html">Resources</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-
-        <a class="btn" href="#contact">Book a Consultation</a>
-      </div>
-    </div>
-  </header>
+  <div id="header-placeholder"></div>
 
 
 
+<section class="container">
+    <h1>🌿 Resources</h1>
 
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <div class="brand-mark" style="border-color: rgba(246,244,241,.22); background: rgba(255,255,255,.06); color: rgba(246,244,241,.92);">🍃</div>
-          <div>Seasons Within</div>
-        </div>
+    <p>
+      Steady, simple tools for grounding and learning.
+    </p>
 
-      <div class="copyright">© <span id="year"></span> Seasons Within. All Rights Reserved.</div>
-    </div>
-  </footer>
+    <hr class="divider">
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <h2>🌱 Podcasts</h2>
+
+    <p><strong>Synergetic Play Therapy® Podcast</strong><br>
+      Nervous-system-aware support for understanding children and relationships.
+    </p>
+
+    <p><strong>Big Baffling Behaviours (Robyn Gobbel)</strong><br>
+      Warm, accessible conversations about trauma, attachment, and regulation.
+    </p>
+
+    <hr class="divider">
+
+    <h2>🌾 Books &amp; Websites</h2>
+
+    <p><strong>Journey Through Trauma — Gretchen Schmelzer, PhD</strong><br>
+      A compassionate guide for long-term trauma healing.<br>
+      Website: journeythroughtrauma.com
+    </p>
+
+    <hr class="divider">
+
+    <h2>🌲 Breathing &amp; Grounding Videos</h2>
+
+    <p>(All available on YouTube.)</p>
+
+    <ul>
+      <li>Figure-8 Breath</li>
+      <li>Box Breathing</li>
+      <li>Sensory Grounding (5-4-3-2-1)</li>
+      <li>Polyvagal Ear Massage</li>
+    </ul>
+
+    <hr class="divider">
+
+    <h2>🌺 A Note on Self-Help Tools</h2>
+
+    <p>
+      Use what helps. Leave what doesn’t.<br>
+      These tools don’t replace therapy — they simply offer support in the moments you need something steady.
+    </p>
+
+    <hr class="divider">
+
+    <h2>🌙 If You Need Immediate Support</h2>
+
+    <p>
+      BC Suicide Prevention Line — 310-6789<br>
+      1-800-SUICIDE (1-800-784-2433)<br>
+      Kids Help Phone — 1-800-668-6868 | Text 686868<br>
+      KUU-US Indigenous Crisis Line — 1-800-588-8717<br>
+      IRSSS — 1-800-721-0066<br>
+      VictimLink BC — 1-800-563-0808
+    </p>
+
+    <p class="note">
+      If you’re in danger, please call 911 or visit your nearest emergency department.
+    </p>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  <div id="footer-placeholder"></div>
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('header-placeholder').innerHTML = html;
+    });
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('footer-placeholder').innerHTML = html;
+    });
+</script>
 </body>
 </html>
