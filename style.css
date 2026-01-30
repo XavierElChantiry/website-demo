@@ -148,7 +148,7 @@ nav a:hover{
     margin: 0 0 8px;
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     font-weight: 600;
-    color: var(--forest);
+    color: var(--text);
     font-size: clamp(1.6rem, 2.4vw, 2.2rem);
 }
 .center-head p{
