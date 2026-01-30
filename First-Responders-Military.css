@@ -1,5 +1,0 @@
-.center-list {
-  list-style-position: inside; /* Positions bullets within the list item's content flow */
-  text-align: center;         /* Centers the text and the inside bullets */
-  padding-left: 0;            /* Removes default browser padding for consistent centering */
-}

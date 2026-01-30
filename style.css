@@ -212,23 +212,28 @@ footer{
 }
 .footer-inner{
     display:flex;
-    align-items:center;
+    align-items:top;
     justify-content:space-between;
+
     gap: 18px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
-.footer-left{
+.footer-div-border-right{
+    width: 100%;
+}
+
+/* .footer-left{
     display:flex;
     align-items:center;
     gap: 10px;
-    font-weight: 600;
-}
-.copyright{
+    font-weight: 400;
+} */
+/* .copyright{
     text-align:center;
     margin-top: 14px;
     font-size: .85rem;
     color: rgba(246,244,241,.70);
-}
+} */
     /* altnav{ display:none; } */
 /* ===== Responsive ===== */
 /* @media (max-width: 900px){
