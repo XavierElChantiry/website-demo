@@ -1,12 +1,64 @@
-    .rates {
-      background: #ffffff;
-      padding: 1.5rem;
-      border-radius: 6px;
-      border: 1px solid #e5e5e5;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    .rates h3 {
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
+.rates {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+}
+
+.rates h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+
+.modes-box {
+  max-width: 100%;
+  padding: 24px 28px;
+  background: linear-gradient(1deg, #94aa92, var(--bg));
+  border-radius: 3px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  border-bottom:1px groove #e5e5e5;
+}
+
+.modes-box h2 {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.modes-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.modes-box li a {
+  display: block;
+  padding: 12px 14px;
+  background-color: var(--card);
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--muted);
+  height: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.modes-box li a:hover,
+.modes-box li a:focus {
+  background-color: #e6e9ff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
