@@ -50,7 +50,10 @@
   padding-left: 0;            /* Removes default browser padding for consistent centering */
 }
 
-
+.home-image{
+    /* min-width: 300px; */
+    align-content: bottom;
+}
 /* If you want the content centered horizontally and vertically */
 
 
