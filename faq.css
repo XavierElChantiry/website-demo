@@ -1,0 +1,100 @@
+.faq-hero {
+  width: 100%;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(246, 244, 241, 0.35),
+      rgba(246, 244, 241, 0.75)
+    ),
+    url("images/pexels-sashmere-2695391.jpg");
+
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-hero-inner {
+  max-width: 70ch;
+  padding: 2rem;
+}
+
+.faq-hero h1 {
+  margin: 0 0 0.5rem;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  color: var(--text);
+}
+
+.faq-hero p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* Section spacing */
+
+.faq-section {
+  margin: 4rem auto;
+}
+
+/* FAQ items */
+
+.faq-item {
+  max-width: 70ch;
+  margin: 0 auto 1rem;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 1.1rem 1.25rem;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--forest);
+  list-style: none;
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.faq-item[open] summary::after {
+  content: "–";
+}
+
+/* FAQ content */
+
+.faq-item p,
+.faq-item ul {
+  margin-top: 0.75rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.faq-item ul {
+  padding-left: 1.2rem;
+}
+
+.faq-item li {
+  margin-bottom: 0.4rem;
+}

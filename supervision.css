@@ -1,12 +1,125 @@
-    .rates {
-      background: #ffffff;
-      padding: 1.5rem;
-      border-radius: 6px;
-      border: 1px solid #e5e5e5;
-    }
+.supervision section.container {
+  margin-bottom: 3rem;
+}
 
-    .rates h3 {
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
+/* Intro text tightening */
+.supervision .center-head p {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Rates ===== */
+
+.rates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.rates {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+}
+
+.rates p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.rates strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  color: var(--forest);
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+}
+
+.rates-note {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Footer note under rates */
+.rates-footer {
+  margin-top: 2rem;
+  text-align: center;
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ===== Lists on supervision page ===== */
+
+.center-list ul {
+  max-width: 70ch;
+  margin: 1.5rem auto;
+  padding-left: 1.2rem;
+  color: var(--text);
+}
+
+.supervision ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* ===== Section rhythm ===== */
+
+.supervision .lined-title {
+  margin-bottom: 0.75rem;
+}
+
+.supervision p {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.supervision-hero {
+  width: 100%;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(246, 244, 241, 0.35),
+      rgba(246, 244, 241, 0.75)
+    ),
+    url("images/pexels-sashmere-2695391.jpg");
+
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.supervision-hero-inner {
+  max-width: 70ch;
+  padding: 2rem;
+}
+
+.supervision-hero h1 {
+  margin: 0 0 0.5rem;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  color: var(--text);
+}
+
+.supervision-hero p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--muted);
+}

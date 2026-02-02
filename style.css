@@ -220,7 +220,12 @@ footer{
 }
 .footer-div-border-right{
     width: 100%;
+    /* color: rgba(246,244,241,.92); */
 }
+/* .footer-div-border{
+    color: rgba(246,244,241,.92);
+
+} */
 
 /* .footer-left{
     display:flex;
