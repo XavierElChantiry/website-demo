@@ -202,21 +202,29 @@ nav a:hover{
     padding: 2rem;
   }
 }
-
+nav {
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 10px;
+  justify-content: center;
+}
 /* ===== Footer ===== */
 footer{
     background: var(--footer);
     color: rgba(246,244,241,.92);
-    padding: 28px 0 34px;
+    padding: 15px 0 15px;
     margin-top: 0;
 }
-.footer-inner{
-    display:flex;
-    align-items:top;
-    justify-content:space-between;
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;     
+}
 
-    gap: 18px;
-    /* flex-wrap: wrap; */
+.footer-inner > div {
+  flex: 1 1 240px;  
+  min-width: 0;        
 }
 .footer-div-border-right{
     width: 100%;
@@ -248,3 +256,25 @@ footer{
     .card{ grid-column: span 12; }
 } */
 
+@media (max-width: 768px) {
+
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav a {
+    padding: 6px 8px;
+    font-size: 0.95rem;
+  }
+}
