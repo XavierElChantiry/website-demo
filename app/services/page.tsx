@@ -1,0 +1,194 @@
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'Services & Offerings | Seasons Within',
+  description: 'Explore therapy options including individual counselling, family therapy, and nature-based sessions.',
+};
+
+export default function Services() {
+  return (
+    <>
+      <section>
+        <div className="modes-box">
+          <h2>Modes of Therapy</h2>
+          <ul>
+            <li><a href="#nature-based">Nature-Based</a></li>
+            <li><a href="#relational">Relational</a></li>
+            <li><a href="#play-therapy">Play Therapy</a></li>
+            <li><a href="#psychodynamic-attachment">Psychodynamic–Attachment Informed</a></li>
+            <li><a href="#trauma-informed">Trauma-Informed</a></li>
+            <li><a href="#developmental-systems">Developmental / Systems Informed</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="container">
+        <h2>Who I Walk With</h2>
+
+        <p>
+          I work with individuals, couples, families, and children who are navigating moments of change, strain, or disconnection. Many people come to therapy feeling overwhelmed, unsure, or stuck - often carrying more than they realize.
+        </p>
+
+        <p>I commonly support:</p>
+
+        <ul>
+          <li><strong>Adults and adolescents</strong> experiencing stress, burnout, anxiety, or life transitions</li>
+          <li><strong>Individuals impacted by trauma or complex trauma</strong>, including first responders and healthcare workers</li>
+          <li><strong>Families and caregivers</strong> navigating parenting challenges, developmental concerns, or changing family dynamics</li>
+          <li><strong>Children</strong> who benefit from play-based and developmentally attuned therapeutic support</li>
+        </ul>
+
+        <p>
+          My work is particularly well suited for those who value an approach that considers the whole context of a person&apos;s life, including relationships, environment, and nervous system. Therapy is shaped collaboratively, with care for each person&apos;s unique history, strengths, and capacity.
+        </p>
+
+        <p>
+          While the work can be deep, it does not have to be heavy all the time; humour and lightness are welcomed when they support connection and regulation.
+        </p>
+
+        <hr />
+
+        <h2>What to Expect</h2>
+
+        <p>
+          Reaching out for therapy can feel vulnerable, especially if you&apos;re not sure what the process will be like. My aim is to make your first steps feel as clear and supported as possible.
+        </p>
+
+        <p>
+          <strong>Intake</strong> begins before your first session. You&apos;ll be invited to complete a brief intake form that helps me understand what&apos;s bringing you in, any relevant history, and what you&apos;re hoping for from therapy. This information allows our first session to feel more grounded and focused, rather than starting from scratch.
+        </p>
+
+        <p>
+          <strong>The first session</strong> is a chance for us to get oriented together. We&apos;ll talk about what&apos;s bringing you in, what you&apos;re hoping for, and any questions or concerns you have about therapy. There is no pressure to share more than feels comfortable, and we will move at a pace that respects your capacity and nervous system.
+        </p>
+
+        <p>
+          <strong>Booking</strong> is designed to be flexible and accessible. Clients can use an online booking system (Jane) to book, reschedule, or cancel sessions, or reach out by email if that feels easier. My role is to support clarity and fit, not to add friction to the process.
+        </p>
+
+        <p>
+          <strong>Session formats</strong> include nature-based and outdoor sessions, typically held at <strong>Williams Park</strong>, unless otherwise arranged. Virtual or telephone counselling is available across British Columbia, when appropriate. In-office sessions may also be available through a partner clinic; please reach out to discuss fit and options.
+        </p>
+
+        <p>
+          <strong>Sessions</strong> typically last 50 minutes, and frequency is guided by your needs, goals, and capacity. Some people attend weekly, others bi-weekly or as needed, and this can be revisited and adjusted over time. Family sessions are generally scheduled for 1 hour and 20 minutes.
+        </p>
+
+        <p>
+          Throughout the process, therapy is collaborative and responsive. My role is to offer a steady, thoughtful space - one that holds both the depth of the work and, when it&apos;s helpful, moments of ease and humour along the way.
+        </p>
+      </section>
+
+      <section className="container">
+        <section id="trauma-informed">
+          <h3>Trauma-Informed Therapy</h3>
+          <p>
+            This is the foundation rather than a specialty add-on. It means sessions are paced, consent-based, and attentive to safety, nervous system responses, and capacity. The focus is on stabilization, understanding, and choice, rather than pushing insight or exposure too quickly.
+          </p>
+        </section>
+
+        <section id="psychodynamic-attachment">
+          <h3>Psychodynamic–Attachment-Informed Therapy</h3>
+          <p>
+            This mode explores how early relationships, attachment patterns, and unconscious processes continue to shape present-day experiences. We pay attention to patterns over time, relational dynamics, and what emerges in the therapeutic relationship itself, always with care and curiosity.
+          </p>
+        </section>
+
+        <section id="relational">
+          <h3>Relational Therapy</h3>
+          <p>
+            Change happens in relationship. This mode emphasizes collaboration, emotional presence, and attunement. Sessions are shaped by what is happening between us as much as by what is being talked about, allowing patterns to be noticed and worked with in real time.
+          </p>
+        </section>
+
+        <section id="developmental-systems">
+          <h3>Developmental &amp; Systems-Informed Therapy</h3>
+          <p>
+            People do not exist in isolation. This approach considers developmental stages, family dynamics, cultural and social context, and broader systems that influence distress and resilience. This is especially important in work with children, families, and caregivers.
+          </p>
+        </section>
+
+        <section id="play-therapy">
+          <h3>Play-Based &amp; Creative Therapy (Children)</h3>
+          <p>
+            With children, therapy often happens through play, creativity, and embodied expression rather than conversation alone. This mode supports emotional regulation, communication, and relational safety in ways that are developmentally appropriate and responsive.
+          </p>
+        </section>
+
+        <section id="nature-based">
+          <h3>Nature-Based / Outdoor Therapy</h3>
+          <p>
+            Nature-based therapy works from the idea that our surroundings influence how we feel, think, and relate. Spending time in natural environments can support grounding, self-awareness, and a sense of belonging and choice. The work is always optional and guided by safety, consent, and clinical fit.
+          </p>
+        </section>
+      </section>
+
+      <section className="container">
+        <h2>Rates</h2>
+
+        <p>
+          Rates are set with care for sustainability, professional responsibility, and the depth of the work involved. I aim to be transparent while also holding space for conversation and fit.
+        </p>
+
+        <p>
+          Access to care matters. I approach conversations about fees with transparency, respect, and care for each person&apos;s circumstances.
+        </p>
+
+        <div className="rates">
+          <p>
+            <strong>Individual Counselling</strong><br />
+            $170 - 50 minutes<br />
+            $255 - 80 minutes<br />
+            $340 - 110 minutes
+          </p>
+
+          <p>
+            <strong>Family Sessions</strong><br />
+            $260 - 80 minutes<br />
+            $360 - 110 minutes
+          </p>
+
+          <p>
+            <strong>Solution-Focused Sessions (Single-Session Support)</strong><br />
+            $170 - 50 minutes
+          </p>
+
+          <p>
+            <strong>Mobile / Home-Based Sessions</strong><br />
+            Starting at $220
+          </p>
+        </div>
+
+        <p>
+          Payment is due at the time of the session. Receipts are provided for extended health benefits where applicable.
+        </p>
+
+        <p>
+          <strong>Payments accepted:</strong> E-transfer, credit card, cash (exact). Direct billing is not offered at this time.
+        </p>
+
+        <p>
+          If cost is a concern, you&apos;re welcome to raise this during an initial consultation. We can talk together about options, pacing, and whether this feels like a sustainable fit.
+        </p>
+
+        <hr />
+
+        <h2>Additional Session Formats</h2>
+
+        <h3>Solution-Focused Sessions</h3>
+        <p>
+          Solution-Focused Sessions are offered as one-off appointments for focused support, decision-making, or perspective-building. Sessions emphasize collaboration, strengths, and practical next steps, without requiring a commitment to ongoing therapy.
+        </p>
+
+        <h3>Mobile / Home-Based Sessions</h3>
+        <p>
+          Mobile sessions offer flexibility for clients who benefit from support outside of a traditional office setting. These sessions take place in agreed-upon community or outdoor locations and are designed to meet you where you are - both practically and emotionally.
+        </p>
+
+        <p>
+          Mobile sessions are not suitable for every situation or every stage of therapy. We will talk together about whether this format aligns with your needs, goals, and capacity, and revisit this over time as therapy evolves.
+        </p>
+      </section>
+    </>
+  );
+}

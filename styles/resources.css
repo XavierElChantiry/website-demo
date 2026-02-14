@@ -1,0 +1,119 @@
+/* =========================
+   Resources Page Styles
+   ========================= */
+
+/* Headings */
+
+.resources h1 {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 2.4rem);
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+}
+
+.resources h2 {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--forest);
+}
+
+/* Intro paragraph */
+
+.resources > p:first-of-type {
+  max-width: 65ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* Divider */
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 2.5rem 0;
+}
+
+/* Paragraph rhythm */
+
+.resources p {
+  max-width: 70ch;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+
+.resources a {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.resources a:hover {
+  color: var(--btn);
+}
+
+/* Lists (soft, grounded) */
+
+.resources ul {
+  max-width: 65ch;
+  margin: 1rem 0 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.resources ul li {
+  margin-bottom: 0.9rem;
+  padding-left: 1.2rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.resources ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+
+/* Book / resource blocks */
+
+.resources p strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Note styling */
+
+.note {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-style: italic;
+  max-width: 65ch;
+}
+
+/* Crisis section soft container */
+
+.resources h2:last-of-type + p {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 1.25rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+/* Mobile tweaks */
+
+@media (max-width: 600px) {
+  .resources h2 {
+    margin-top: 2rem;
+  }
+
+  .resources p,
+  .resources ul {
+    font-size: 0.95rem;
+  }
+}

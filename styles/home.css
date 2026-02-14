@@ -1,0 +1,205 @@
+.offerings-box {
+  max-width: 100%;
+  padding: 28px;
+  background: linear-gradient(135deg, rgba(255,255,255,.8), rgba(246,244,241,.9));
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.offerings-box h2 {
+  margin: 0 0 24px;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  color: var(--forest);
+  text-align: center;
+}
+
+.offerings-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.offerings-box li {
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.offerings-box li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: var(--forest);
+}
+
+/* .offerings-box li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+} */
+
+
+
+
+.center-list {
+  list-style-position: inside; /* Positions bullets within the list item's content flow */
+  text-align: center;         /* Centers the text and the inside bullets */
+  padding-left: 0;            /* Removes default browser padding for consistent centering */
+}
+
+.home-image {
+    width: 100%;
+    height: 420px;
+}
+
+.home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* If you want the content centered horizontally and vertically */
+
+
+/* Style the image inside the centered container, if needed */
+/* .centered img {
+  width: 150px;
+  border-radius: 50%;
+} */
+
+/* ===== intro image ===== */
+.intro-media{
+        width: 100%;
+        margin: 22px auto 0;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        overflow:hidden;
+        box-shadow: var(--shadow-soft);
+        height: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:
+            linear-gradient(to bottom, rgba(246,244,241,.08), rgba(246,244,241,.45)),
+            url("/images/kira-auf-der-heide.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+}
+
+.intro-media h2 {
+    color: var(--text);
+    text-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
+    max-width: 60ch;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.intro-media h4 {
+    color: var(--muted);
+    text-shadow: 0 1px 4px rgba(255, 255, 255, 0.3);
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+}
+
+
+
+/* ===== Services cards ===== */
+.services{
+    padding-top: 0px;
+}
+.cards{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 22px;
+    margin-top: 26px;
+}
+.card{
+    grid-column: span 4;
+    background: var(--card);
+    border: 1px solid var(--line);
+    /* border-radius: 18px; */
+    padding: 22px 18px;
+    text-align:center;
+    box-shadow: var(--shadow-soft);
+}
+.card h3{
+    margin: 10px 0 8px;
+    font-size: 1.05rem;
+    color: var(--text);
+    font-weight: 600;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.card p{
+    margin:0;
+    color: var(--muted);
+    font-size: .95rem;
+}
+.icon{
+    height: 44px;
+    display:grid;
+    place-items:center;
+    color: var(--forest);
+    opacity: .9;
+    font-size: 24px;
+}
+
+/* ===== CTA strip ===== */
+.cta{
+    padding: 64px 0;
+    background:
+    linear-gradient(to bottom, rgba(0,0,0,.03), rgba(0,0,0,0) 40%);
+    border-top: 1px solid rgba(0,0,0,.06);
+}
+.cta h2{
+    margin:0 0 10px;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 600;
+    color: var(--forest);
+    font-size: clamp(1.7rem, 2.4vw, 2.3rem);
+    text-align:center;
+}
+.cta p{
+    margin:0 auto 18px;
+    color: var(--muted);
+    max-width: 65ch;
+    text-align:center;
+}
+.cta .btn{
+    display:block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Page sections */
+.section {
+    padding: 64px 0;
+}
+
+.section.soft {
+    background: linear-gradient(to bottom, rgba(0,0,0,.02), rgba(0,0,0,0) 40%);
+}
+
+/* Spacing */
+section {
+    padding: 4rem 0;
+}
+
+section.container {
+    padding: 3rem 0;
+}
+
+/* Scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
